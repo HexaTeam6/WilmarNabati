@@ -37,7 +37,8 @@ class Home extends CI_Controller
         $t_shift1           = $this->input->post('t_shift1');
         $t_shift2           = $this->input->post('t_shift2');
         $t_shift3           = $this->input->post('t_shift3');
-        $total_produksi     = $t_shift1 + $t_shift2 + $t_shift3;
+//        $total_produksi     = $t_shift1 + $t_shift2 + $t_shift3;
+        $total_produksi     = $this->input->post('total_produksi');
         $r_shift1           = $this->input->post('r_shift1');
         $r_shift2           = $this->input->post('r_shift2');
         $r_shift3           = $this->input->post('r_shift3');
@@ -86,7 +87,8 @@ class Home extends CI_Controller
         $t_shift1           = $this->input->post('t_shift1');
         $t_shift2           = $this->input->post('t_shift2');
         $t_shift3           = $this->input->post('t_shift3');
-        $total_produksi     = $t_shift1 + $t_shift2 + $t_shift3;
+//        $total_produksi     = $t_shift1 + $t_shift2 + $t_shift3;
+        $total_produksi     = $this->input->post('total_produksi');
         $r_shift1           = $this->input->post('r_shift1');
         $r_shift2           = $this->input->post('r_shift2');
         $r_shift3           = $this->input->post('r_shift3');

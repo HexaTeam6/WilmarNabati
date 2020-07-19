@@ -77,21 +77,21 @@
                                 <input type="text" class="form-control" name="target_produksi" id="target_produksi" placeholder="Target Produksi">
                             </div>
                             <div class="form-group <?php echo ($_SESSION['kode_akses'] == 4) ? '' : 'd-none'?>">
-                                <label for="t_shift1" class="col-form-label">Produksi Shift 1</label>
-                                <input type="text" class="form-control" name="t_shift1" id="t_shift1" placeholder="Produksi Shift 1">
+                                <label for="t_shift1" class="col-form-label">Target Produksi Shift 1</label>
+                                <input type="text" class="form-control" name="t_shift1" id="t_shift1" placeholder="Target Produksi Shift 1">
                             </div>
                             <div class="form-group <?php echo ($_SESSION['kode_akses'] == 4) ? '' : 'd-none'?>">
-                                <label for="t_shift2" class="col-form-label">Produksi Shift 2</label>
-                                <input type="text" class="form-control" name="t_shift2" id="t_shift2" placeholder="Produksi Shift 2">
+                                <label for="t_shift2" class="col-form-label">Target Produksi Shift 2</label>
+                                <input type="text" class="form-control" name="t_shift2" id="t_shift2" placeholder="Target Produksi Shift 2">
                             </div>
                             <div class="form-group <?php echo ($_SESSION['kode_akses'] == 4) ? '' : 'd-none'?>">
-                                <label for="t_shift3" class="col-form-label">Produksi Shift 3</label>
-                                <input type="text" class="form-control" name="t_shift3" id="t_shift3" placeholder="Produksi Shift 3">
+                                <label for="t_shift3" class="col-form-label">Target Produksi Shift 3</label>
+                                <input type="text" class="form-control" name="t_shift3" id="t_shift3" placeholder="Target Produksi Shift 3">
                             </div>
-<!--                            <div class="form-group <?php echo ($_SESSION['kode_akses'] == 1) ? '' : 'd-none'?>">-->
-<!--                                <label for="total_produksi" class="col-form-label">Total Produksi</label>-->
-<!--                                <input type="text" class="form-control" name="total_produksi" id="total_produksi" placeholder="Total Produksi">-->
-<!--                            </div>-->
+                            <div class="form-group <?php echo ($_SESSION['kode_akses'] == 1) ? '' : 'd-none'?>">
+                                <label for="total_produksi" class="col-form-label">Total Produksi</label>
+                                <input type="text" class="form-control" name="total_produksi" id="total_produksi" placeholder="Total Produksi">
+                            </div>
 <!--                            <div class="form-group <?php echo ($_SESSION['kode_akses'] == 3) ? '' : 'd-none'?>">-->
 <!--                                <label for="total_reject" class="col-form-label">Total Reject</label>-->
 <!--                                <input type="text" class="form-control" name="total_reject" id="total_reject" placeholder="Total Reject">-->
@@ -143,15 +143,15 @@
                     </div>
                     <div class="modal-body">
                         <div class="form-group">
-                            <label class="col-form-label"><b>Produksi Shift 1 : </b></label>
+                            <label class="col-form-label"><b>Target Produksi Shift 1 : </b></label>
                             <label class="col-form-label" id="t_shift1_label"></label>
                         </div>
                         <div class="form-group">
-                            <label class="col-form-label"><b>Produksi Shift 2 : </b></label>
+                            <label class="col-form-label"><b>Target Produksi Shift 2 : </b></label>
                             <label class="col-form-label" id="t_shift2_label"></label>
                         </div>
                         <div class="form-group">
-                            <label class="col-form-label"><b>Produksi Shift 3 : </b></label>
+                            <label class="col-form-label"><b>Target Produksi Shift 3 : </b></label>
                             <label class="col-form-label" id="t_shift3_label"></label>
                         </div>
                         <div class="form-group">
@@ -369,7 +369,7 @@
         $("#t_shift1").inputmask("9{1,11}");
         $("#t_shift2").inputmask("9{1,11}");
         $("#t_shift3").inputmask("9{1,11}");
-//        $("#total_produksi").inputmask("9{1,11}");
+        $("#total_produksi").inputmask("9{1,11}");
 //        $("#total_reject").inputmask("9{1,11}");
         $("#r_shift1").inputmask("9{1,11}");
         $("#r_shift2").inputmask("9{1,11}");
@@ -390,7 +390,7 @@
             $("#t_shift1").val('');
             $("#t_shift2").val('');
             $("#t_shift3").val('');
-//            $("#total_produksi").val('');
+            $("#total_produksi").val('');
 //            $("#total_reject").val('');
             $("#r_shift1").val('');
             $("#r_shift2").val('');
@@ -416,7 +416,7 @@
             $("#t_shift1").val($item.find("input[id$='t_shift1']:hidden:first").val());
             $("#t_shift2").val($item.find("input[id$='t_shift2']:hidden:first").val());
             $("#t_shift3").val($item.find("input[id$='t_shift3']:hidden:first").val());
-//            $("#total_produksi").val('');
+            $("#total_produksi").val($.trim($item.find(".total_produksi").text()));
 //            $("#total_reject").val('');
             $("#r_shift1").val($item.find("input[id$='r_shift1']:hidden:first").val());
             $("#r_shift2").val($item.find("input[id$='r_shift2']:hidden:first").val());
