@@ -76,6 +76,14 @@
                     </a>
                 </li>
             <?php }?>
+            <?php if ($_SESSION['kode_akses'] == 0 || $_SESSION['kode_akses'] == 3){?>
+                <li class="treeview no-b">
+                    <a href="<?php echo site_url('/Grafik')?>">
+                        <i class="icon icon-line-chart indigo-text s-18"></i>
+                        <span>Grafik</span>
+                    </a>
+                </li>
+            <?php }?>
         </ul>
     </section>
 </aside>
