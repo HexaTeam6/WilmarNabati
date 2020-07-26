@@ -80,7 +80,7 @@
                 <li class="treeview no-b">
                     <a href="<?php echo site_url('/Grafik')?>">
                         <i class="icon icon-line-chart indigo-text s-18"></i>
-                        <span>Grafik</span>
+                        <span>Peta Kendali</span>
                     </a>
                 </li>
             <?php }?>

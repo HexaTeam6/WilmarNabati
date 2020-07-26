@@ -18,8 +18,8 @@
                 <div class="row p-t-b-10 ">
                     <div class="col">
                         <h4>
-                            <i class="icon-dashboard2"></i>
-                            Dashboard
+                            <i class="icon-line-chart"></i>
+                            Grafik
                         </h4>
                     </div>
                 </div>
@@ -28,7 +28,7 @@
 
         <div class="container-fluid relative animatedParent animateOnce">
             <div class="card no-b my-3 p-3">
-                <center><h2><b>GRAFIK</b></h2></center>
+                <center><h2><b>PETA KENDALI</b></h2></center>
                 <div class="col-md-8 offset-2">
                     <canvas id="myChart" width="400" height="400"></canvas>
                 </div>
@@ -173,7 +173,7 @@
                     data: <?= json_encode($LCL)?>,
                     spanGaps: !1
                 },{
-                    label: 'Average',
+                    label: 'Ui',
                     fill: 0,
                     lineTension: 0,
                     backgroundColor: 'rgba(163,136,227, 0.1)',
